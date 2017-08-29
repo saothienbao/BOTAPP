@@ -1,4 +1,4 @@
-require_relative '../../../app/modules/commands/commands'
+require_relative '../../../app/vabbot/modules/commands/commands'
 require_relative 'user_store'
 require_relative 'message_dispatch'
 require_relative 'postback_dispatch'

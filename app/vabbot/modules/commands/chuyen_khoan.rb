@@ -2,8 +2,8 @@ module Chuyen_Khoan
 
   module_function
 
-  TYPE_OF_TRANSFER = ['INT','EXT','FAST']
-  TRANSFER =  UI::QuickReplies.build(%w[NỘI-BỘ INT], %w[LIÊN-NGÂN-HÀNG EXT], %w[CHUYỂN-NHANH FAST])
+  TYPE_OF_TRANSFER ||= ['INT','EXT','FAST']
+  TRANSFER ||=  UI::QuickReplies.build(%w[NỘI-BỘ INT], %w[LIÊN-NGÂN-HÀNG EXT], %w[CHUYỂN-NHANH FAST])
 
   def start_chuyenkhoan
     if @message.quick_reply == 'START_CHUYENKHOAN' || @message.text =~ /yes/i

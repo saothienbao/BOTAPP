@@ -1,5 +1,5 @@
 module SampleElements
-  CAROUSEL = [
+  CAROUSEL ||= [
     {
       title: 'Giới Thiệu Về Việt Á',
       image_url: 'https://vietabank.com.vn/Portals/0/HTML/GIOITHIEU/banner%20tam%20nhin.jpg',
@@ -18,8 +18,8 @@ module SampleElements
     }
   ].freeze
 
-  BUTTON_TINTUC_TEXT = "Tin tức mới từ Viêt Á Bank".freeze
-  BUTTON_TINTUC_BUTTONS = [
+  BUTTON_TINTUC_TEXT ||= "Tin tức mới từ Viêt Á Bank".freeze
+  BUTTON_TINTUC_BUTTONS ||= [
     {
       type: :web_url,
       url: 'https://vietabank.com.vn/tin-tuc-va-su-kien_t283c148',
@@ -27,8 +27,8 @@ module SampleElements
     }
   ].freeze
 
-  BUTTON_TYGIA_TEXT = "Tỷ giá ngoại tệ và vàng".freeze
-  BUTTON_TYGIA_BUTTONS = [
+  BUTTON_TYGIA_TEXT ||= "Tỷ giá ngoại tệ và vàng".freeze
+  BUTTON_TYGIA_BUTTONS ||= [
       type: :web_url,
       url: 'https://vietabank.com.vn/chuyen-muc-khac/ty-gia_t388c0',
       title: "Xem Tỷ Giá"

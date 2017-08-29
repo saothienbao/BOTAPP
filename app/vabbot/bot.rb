@@ -1,9 +1,9 @@
   require 'dotenv/load'
   require 'facebook/messenger'
   require 'unidecoder'
-  require_relative '../../app/helpers/vabbot_base/vabbotbase'
-  require_relative '../../app/helpers/vabbot_helper'
-  require_relative '../../app/helpers/nlp_helper'
+  require_relative '../../app/vabbot/bothelp/vabbotbase'
+  require_relative '../../app/vabbot/bothelp/vabbot_helper'
+  require_relative '../../app/vabbot/bothelp/nlp_helper'
   include Facebook::Messenger
   include VabbotHelper
   include Unidecoder

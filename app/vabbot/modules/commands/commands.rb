@@ -1,6 +1,6 @@
 require 'httparty'
 require 'json'
-require_relative '../../../app/ui/ui'
+require_relative '../../../../app/vabbot/ui/ui'
 require_relative 'questionnaire'
 require_relative 'show_ui_examples'
 require_relative 'chuyen_khoan'
@@ -18,8 +18,8 @@ module Commands
   # commands are mixed into Dispatch classes as private methods.
   module_function
 
-  API_URL = 'https://maps.googleapis.com/maps/api/geocode/json?address='.freeze
-  REVERSE_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='.freeze
+  API_URL ||= 'https://maps.googleapis.com/maps/api/geocode/json?address='.freeze
+  REVERSE_API_URL ||= 'https://maps.googleapis.com/maps/api/geocode/json?latlng='.freeze
 
   # Lookup based on location data from user's device
   def lookup_location

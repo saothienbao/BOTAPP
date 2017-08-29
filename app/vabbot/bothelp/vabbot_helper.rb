@@ -8,7 +8,7 @@ module VabbotHelper
   # commands are mixed into Dispatch classes as private methods.
   module_function
 
-  GRAPH_URL = 'https://graph.facebook.com/v2.8/'.freeze
+  GRAPH_URL ||= 'https://graph.facebook.com/v2.8/'.freeze
 
   # abstraction over Bot.deliver to send messages declaratively and directly
   def say(text = 'What was I talking about?', quick_replies: nil, user: @user)

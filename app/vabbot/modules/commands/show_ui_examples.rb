@@ -1,4 +1,4 @@
-require_relative '../../../app/static/sample_elements'
+require_relative '../../../../app/vabbot/static/sample_elements'
 # An example of commands submodule.
 module ShowUIExamples
   # State 'module_function' before any method definitions so

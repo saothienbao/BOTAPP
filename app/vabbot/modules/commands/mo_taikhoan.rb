@@ -1,10 +1,10 @@
 module MoTaiKhoan
   module_function
 
-  OPEN_ACCOUNT_GENDER = UI::QuickReplies.build(%w[Ông Mr], %w[Bà Ms])
-  OPEN_ACCOUNT_ID = UI::QuickReplies.build(%w[CMND CMND], %w[Hộ_Chiếu PASSPORT], %w[CCCD CCCD])
-  OPEN_ACCOUNT_MARRIAGE = UI::QuickReplies.build(%w[Độc_Thân SINGLE], %w[Đã_Kết_Hôn MARRIAGE],%w[Khác OTHER])
-  OPEN_ACCOUNT_CAREER = UI::QuickReplies.build(%w[Công_Chức OFFICER], %w[Nhân_Viên_Văn_Phòng STAFF], %w[Tự_Doanh BUSINESS], %w[Khác OTHER])
+  OPEN_ACCOUNT_GENDER ||= UI::QuickReplies.build(%w[Ông Mr], %w[Bà Ms])
+  OPEN_ACCOUNT_ID ||= UI::QuickReplies.build(%w[CMND CMND], %w[Hộ_Chiếu PASSPORT], %w[CCCD CCCD])
+  OPEN_ACCOUNT_MARRIAGE ||= UI::QuickReplies.build(%w[Độc_Thân SINGLE], %w[Đã_Kết_Hôn MARRIAGE],%w[Khác OTHER])
+  OPEN_ACCOUNT_CAREER ||= UI::QuickReplies.build(%w[Công_Chức OFFICER], %w[Nhân_Viên_Văn_Phòng STAFF], %w[Tự_Doanh BUSINESS], %w[Khác OTHER])
 
   def start_motaikhoan
     if @message.quick_reply == 'START_MOTAIKHOAN' || @message.text =~ /yes/i
